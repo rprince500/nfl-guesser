@@ -1,0 +1,6 @@
+framework module Pods_NFL_Guesser {
+  umbrella header "Pods-NFL Guesser-umbrella.h"
+
+  export *
+  module * { export * }
+}

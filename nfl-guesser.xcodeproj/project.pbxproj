@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64ED8744F3B027B91B7C6AF5 /* Pods_NFL_Guesser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0ED256D73E6353D8137C9F6 /* Pods_NFL_Guesser.framework */; };
+		AE5DE7C327FA3EC90052396E /* LineupDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5DE7C227FA3EC90052396E /* LineupDAO.swift */; };
+		AE5DE7C527FA40B00052396E /* LogoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5DE7C427FA40B00052396E /* LogoDAO.swift */; };
+		AEA8959227F69C310054FC0B /* incorrect.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA8959127F69C310054FC0B /* incorrect.json */; };
+		AEA8959327F69C3A0054FC0B /* correct.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA8959027F69C220054FC0B /* correct.json */; };
+		AEA8959527F69C770054FC0B /* nfl.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA8959427F69C6D0054FC0B /* nfl.json */; };
+		AEA8959C27F69F790054FC0B /* Lineup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA8959B27F69F790054FC0B /* Lineup.swift */; };
+		AEA8959E27F69FA40054FC0B /* NFL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA8959D27F69FA40054FC0B /* NFL.swift */; };
+		AEA895A227F6A1370054FC0B /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA895A127F6A1370054FC0B /* GameView.swift */; };
+		AEA895A427F6A1730054FC0B /* LineupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA895A327F6A1730054FC0B /* LineupView.swift */; };
+		AEA895A627F6A1870054FC0B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA895A527F6A1870054FC0B /* PlayerView.swift */; };
+		AEA895A827F6A1BC0054FC0B /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA895A727F6A1BC0054FC0B /* ResponseView.swift */; };
+		AED5A6BD27F695EA00F80421 /* NFLGuesserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A6BC27F695EA00F80421 /* NFLGuesserApp.swift */; };
+		AED5A6C127F695EC00F80421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED5A6C027F695EC00F80421 /* Assets.xcassets */; };
+		AED5A6C427F695EC00F80421 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED5A6C327F695EC00F80421 /* Preview Assets.xcassets */; };
+		AED5A6CC27F696A100F80421 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AED5A6CB27F696A100F80421 /* Lottie */; };
+		AED5A6D027F699A100F80421 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A6CF27F699A100F80421 /* HomeView.swift */; };
+		AED5A6D227F69A8D00F80421 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A6D127F69A8D00F80421 /* LottieView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7470FD2B2B72EF0B688C75BF /* Pods-NFL Guesser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFL Guesser.debug.xcconfig"; path = "Target Support Files/Pods-NFL Guesser/Pods-NFL Guesser.debug.xcconfig"; sourceTree = "<group>"; };
+		A0ED256D73E6353D8137C9F6 /* Pods_NFL_Guesser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NFL_Guesser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5DE7C227FA3EC90052396E /* LineupDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupDAO.swift; sourceTree = "<group>"; };
+		AE5DE7C427FA40B00052396E /* LogoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoDAO.swift; sourceTree = "<group>"; };
+		AE5DE7C627FE95240052396E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "NFL-Guesser/Info.plist"; sourceTree = "<group>"; };
+		AEA8959027F69C220054FC0B /* correct.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = correct.json; sourceTree = "<group>"; };
+		AEA8959127F69C310054FC0B /* incorrect.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = incorrect.json; sourceTree = "<group>"; };
+		AEA8959427F69C6D0054FC0B /* nfl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nfl.json; sourceTree = "<group>"; };
+		AEA8959B27F69F790054FC0B /* Lineup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lineup.swift; sourceTree = "<group>"; };
+		AEA8959D27F69FA40054FC0B /* NFL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFL.swift; sourceTree = "<group>"; };
+		AEA895A127F6A1370054FC0B /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		AEA895A327F6A1730054FC0B /* LineupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupView.swift; sourceTree = "<group>"; };
+		AEA895A527F6A1870054FC0B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		AEA895A727F6A1BC0054FC0B /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
+		AEB6779C27FEA4D800B99609 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		AED5A6B927F695EA00F80421 /* NFL Guesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFL Guesser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED5A6BC27F695EA00F80421 /* NFLGuesserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLGuesserApp.swift; sourceTree = "<group>"; };
+		AED5A6C027F695EC00F80421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AED5A6C327F695EC00F80421 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AED5A6CF27F699A100F80421 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AED5A6D127F69A8D00F80421 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		B54918AEF8E4CBCE016CD88C /* Pods-NFL Guesser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFL Guesser.release.xcconfig"; path = "Target Support Files/Pods-NFL Guesser/Pods-NFL Guesser.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AED5A6B627F695EA00F80421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED5A6CC27F696A100F80421 /* Lottie in Frameworks */,
+				64ED8744F3B027B91B7C6AF5 /* Pods_NFL_Guesser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		982D8E4F00177EF4BABFDCE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0ED256D73E6353D8137C9F6 /* Pods_NFL_Guesser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE5DE7C127FA3EA60052396E /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				AE5DE7C227FA3EC90052396E /* LineupDAO.swift */,
+				AE5DE7C427FA40B00052396E /* LogoDAO.swift */,
+			);
+			path = DAOs;
+			sourceTree = "<group>";
+		};
+		AEA8958F27F69BF40054FC0B /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				AEA8959027F69C220054FC0B /* correct.json */,
+				AEA8959127F69C310054FC0B /* incorrect.json */,
+				AEA8959427F69C6D0054FC0B /* nfl.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		AEA8959627F69D460054FC0B /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				AED5A6D127F69A8D00F80421 /* LottieView.swift */,
+				AEA8958F27F69BF40054FC0B /* LottieAnimations */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		AEA8959727F69ED20054FC0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AED5A6CF27F699A100F80421 /* HomeView.swift */,
+				AEA895A127F6A1370054FC0B /* GameView.swift */,
+				AEA895A327F6A1730054FC0B /* LineupView.swift */,
+				AEA895A527F6A1870054FC0B /* PlayerView.swift */,
+				AEA895A727F6A1BC0054FC0B /* ResponseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEA8959A27F69F660054FC0B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEA8959B27F69F790054FC0B /* Lineup.swift */,
+				AEA8959D27F69FA40054FC0B /* NFL.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AED5A6B027F695E900F80421 = {
+			isa = PBXGroup;
+			children = (
+				AE5DE7C627FE95240052396E /* Info.plist */,
+				AED5A6BB27F695EA00F80421 /* nfl-guesser */,
+				AED5A6BA27F695EA00F80421 /* Products */,
+				B8347C0FC1C1648CDC4CEF48 /* Pods */,
+				982D8E4F00177EF4BABFDCE8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AED5A6BA27F695EA00F80421 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AED5A6B927F695EA00F80421 /* NFL Guesser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AED5A6BB27F695EA00F80421 /* nfl-guesser */ = {
+			isa = PBXGroup;
+			children = (
+				AEB6779C27FEA4D800B99609 /* Config.xcconfig */,
+				AED5A6BC27F695EA00F80421 /* NFLGuesserApp.swift */,
+				AEA8959A27F69F660054FC0B /* Models */,
+				AE5DE7C127FA3EA60052396E /* DAOs */,
+				AEA8959727F69ED20054FC0B /* Views */,
+				AEA8959627F69D460054FC0B /* Lottie */,
+				AED5A6C227F695EC00F80421 /* Preview Content */,
+				AED5A6C027F695EC00F80421 /* Assets.xcassets */,
+			);
+			path = "nfl-guesser";
+			sourceTree = "<group>";
+		};
+		AED5A6C227F695EC00F80421 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AED5A6C327F695EC00F80421 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8347C0FC1C1648CDC4CEF48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7470FD2B2B72EF0B688C75BF /* Pods-NFL Guesser.debug.xcconfig */,
+				B54918AEF8E4CBCE016CD88C /* Pods-NFL Guesser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AED5A6B827F695EA00F80421 /* NFL Guesser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AED5A6C727F695EC00F80421 /* Build configuration list for PBXNativeTarget "NFL Guesser" */;
+			buildPhases = (
+				9573196CE624F3E71A95079C /* [CP] Check Pods Manifest.lock */,
+				AED5A6B527F695EA00F80421 /* Sources */,
+				AED5A6B627F695EA00F80421 /* Frameworks */,
+				AED5A6B727F695EA00F80421 /* Resources */,
+				B99223628C49703FE65FE766 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NFL Guesser";
+			packageProductDependencies = (
+				AED5A6CB27F696A100F80421 /* Lottie */,
+			);
+			productName = "NFL Guesser";
+			productReference = AED5A6B927F695EA00F80421 /* NFL Guesser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AED5A6B127F695E900F80421 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					AED5A6B827F695EA00F80421 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AED5A6B427F695E900F80421 /* Build configuration list for PBXProject "nfl-guesser" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AED5A6B027F695E900F80421;
+			packageReferences = (
+				AED5A6CA27F696A100F80421 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = AED5A6BA27F695EA00F80421 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AED5A6B827F695EA00F80421 /* NFL Guesser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AED5A6B727F695EA00F80421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED5A6C427F695EC00F80421 /* Preview Assets.xcassets in Resources */,
+				AEA8959227F69C310054FC0B /* incorrect.json in Resources */,
+				AEA8959327F69C3A0054FC0B /* correct.json in Resources */,
+				AEA8959527F69C770054FC0B /* nfl.json in Resources */,
+				AED5A6C127F695EC00F80421 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9573196CE624F3E71A95079C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NFL Guesser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B99223628C49703FE65FE766 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFL Guesser/Pods-NFL Guesser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NFL Guesser/Pods-NFL Guesser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NFL Guesser/Pods-NFL Guesser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AED5A6B527F695EA00F80421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA895A627F6A1870054FC0B /* PlayerView.swift in Sources */,
+				AE5DE7C327FA3EC90052396E /* LineupDAO.swift in Sources */,
+				AED5A6D027F699A100F80421 /* HomeView.swift in Sources */,
+				AEA8959E27F69FA40054FC0B /* NFL.swift in Sources */,
+				AEA895A427F6A1730054FC0B /* LineupView.swift in Sources */,
+				AEA895A827F6A1BC0054FC0B /* ResponseView.swift in Sources */,
+				AED5A6BD27F695EA00F80421 /* NFLGuesserApp.swift in Sources */,
+				AED5A6D227F69A8D00F80421 /* LottieView.swift in Sources */,
+				AE5DE7C527FA40B00052396E /* LogoDAO.swift in Sources */,
+				AEA8959C27F69F790054FC0B /* Lineup.swift in Sources */,
+				AEA895A227F6A1370054FC0B /* GameView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AED5A6C527F695EC00F80421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB6779C27FEA4D800B99609 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AED5A6C627F695EC00F80421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEB6779C27FEA4D800B99609 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AED5A6C827F695EC00F80421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7470FD2B2B72EF0B688C75BF /* Pods-NFL Guesser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nfl-guesser/Preview Content\"";
+				DEVELOPMENT_TEAM = 5A5BK366CA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NFL-Guesser/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanprince.NFL-Guesser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AED5A6C927F695EC00F80421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B54918AEF8E4CBCE016CD88C /* Pods-NFL Guesser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nfl-guesser/Preview Content\"";
+				DEVELOPMENT_TEAM = 5A5BK366CA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "NFL-Guesser/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanprince.NFL-Guesser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AED5A6B427F695E900F80421 /* Build configuration list for PBXProject "nfl-guesser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED5A6C527F695EC00F80421 /* Debug */,
+				AED5A6C627F695EC00F80421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AED5A6C727F695EC00F80421 /* Build configuration list for PBXNativeTarget "NFL Guesser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AED5A6C827F695EC00F80421 /* Debug */,
+				AED5A6C927F695EC00F80421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AED5A6CA27F696A100F80421 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AED5A6CB27F696A100F80421 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AED5A6CA27F696A100F80421 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AED5A6B127F695E900F80421 /* Project object */;
+}

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct HomeView: View {
     
@@ -18,7 +19,10 @@ struct HomeView: View {
             VStack() {
                 Spacer()
                 LottieView(filename: "nfl", animationMode: .looping)
-                    .frame(minWidth: 0, maxWidth: 200, minHeight: 0, maxHeight: 200)
+                    .frame(minWidth: 0,
+                           maxWidth: ScreenAdapter.main.size(200, .width),
+                           minHeight: 0,
+                           maxHeight: ScreenAdapter.main.size(200, .width))
                     .shadow(color: Color("shadow"), radius: 8)
                     .shadow(color: Color("shadow"), radius: 8)
                     .shadow(color: Color("shadow"), radius: 8)
@@ -26,14 +30,11 @@ struct HomeView: View {
                     .font(.title)
                     .fontWeight(.heavy)
                     .foregroundColor(Color("primary-blue"))
-                    .padding(.top, 30)
+                    .padding(.top, ScreenAdapter.main.size(30, .height))
                 Spacer()
                 Button() {
                     let teamID = Int.random(in: 1...32)
                     let team = NFL.teams.first(where: { $0.id == teamID }) ?? NFL.teams[0]
-//                    lineupDao.fetchLineup(of: team) {
-//                        gameStarted.toggle()
-//                    }
                     Task {
                         await lineupDao.fetchLineup(of: team)
                         gameStarted.toggle()

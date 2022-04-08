@@ -25,17 +25,17 @@ struct GameView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color("primary-gray"))
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.top, 40)
-                    .padding(.leading, 28)
-                    .padding(.bottom, 8)
+                    .padding(.top, ScreenAdapter.main.size(40, .height))
+                    .padding(.leading, ScreenAdapter.main.size(28, .width))
+                    .padding(.bottom, ScreenAdapter.main.size(8, .height))
                 LineupView(lineup: team.lineup, showQB: $showingQB)
-                    .padding(.bottom, 16)
+                    .padding(.bottom, ScreenAdapter.main.size(16, .height))
                 HStack {
                     Text("NEED A HINT?")
                         .font(.caption)
                         .fontWeight(.medium)
                         .foregroundColor(Color("secondary-gray"))
-                        .padding(.leading, 28)
+                        .padding(.leading, ScreenAdapter.main.size(28, .width))
                     Toggle(isOn: $showingQB, label: {
                         let text = showingQB ? "Hide QB" : "Reveal QB"
                         Text(text)
@@ -46,7 +46,7 @@ struct GameView: View {
                     .tint(Color("primary-blue"))
                     .controlSize(.small)
                     .clipShape(Capsule())
-                    .padding(.leading, 8)
+                    .padding(.leading, ScreenAdapter.main.size(8, .width))
                     Spacer()
                 }
                 Picker("Answer", selection: $selectedTeamID) {
@@ -58,27 +58,28 @@ struct GameView: View {
                 }
                 .pickerStyle(.wheel)
                 .accentColor(Color(.systemRed))
-                .padding(.top, -10)
-                .padding(.leading, 4)
-                .padding(.trailing, 4)
+                .padding(.top, ScreenAdapter.main.size(-10, .height))
+                .padding(.leading, ScreenAdapter.main.size(4, .width))
+                .padding(.trailing, ScreenAdapter.main.size(4, .width))
                 Button() {
                     withAnimation(.easeOut) {
                         self.answerSubmitted.toggle()
                     }
                 } label: {
-                    HStack(spacing: 24) {
+                    HStack(spacing: ScreenAdapter.main.size(24, .width)) {
                         Image("\(NFL.teams[selectedTeamID-1].mascot.rawValue.lowercased())")
                             .renderingMode(.original)
                             .resizable()
                             .scaledToFit()
                             .padding(EdgeInsets(top: 3, leading: 3, bottom: 3, trailing: 3))
-                            .frame(width: 40, height: 40)
+                            .frame(width: ScreenAdapter.main.size(40, .width),
+                                   height: ScreenAdapter.main.size(40, .width))
                             .background(.white)
                             .clipShape(Circle())
                         Text("Submit")
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .padding(.trailing, 28)
+                            .padding(.trailing, ScreenAdapter.main.size(28, .width))
                     }
                     .padding(6)
                 }

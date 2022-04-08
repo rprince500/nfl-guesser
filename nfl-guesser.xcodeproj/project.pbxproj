@@ -19,6 +19,7 @@
 		AEA895A427F6A1730054FC0B /* LineupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA895A327F6A1730054FC0B /* LineupView.swift */; };
 		AEA895A627F6A1870054FC0B /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA895A527F6A1870054FC0B /* PlayerView.swift */; };
 		AEA895A827F6A1BC0054FC0B /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA895A727F6A1BC0054FC0B /* ResponseView.swift */; };
+		AEB6779E27FFBC3100B99609 /* ScreenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB6779D27FFBC3100B99609 /* ScreenAdapter.swift */; };
 		AED5A6BD27F695EA00F80421 /* NFLGuesserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A6BC27F695EA00F80421 /* NFLGuesserApp.swift */; };
 		AED5A6C127F695EC00F80421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED5A6C027F695EC00F80421 /* Assets.xcassets */; };
 		AED5A6C427F695EC00F80421 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED5A6C327F695EC00F80421 /* Preview Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		AEA895A527F6A1870054FC0B /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		AEA895A727F6A1BC0054FC0B /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
 		AEB6779C27FEA4D800B99609 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		AEB6779D27FFBC3100B99609 /* ScreenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenAdapter.swift; sourceTree = "<group>"; };
 		AED5A6B927F695EA00F80421 /* NFL Guesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NFL Guesser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED5A6BC27F695EA00F80421 /* NFLGuesserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFLGuesserApp.swift; sourceTree = "<group>"; };
 		AED5A6C027F695EC00F80421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				AEB6779C27FEA4D800B99609 /* Config.xcconfig */,
 				AED5A6BC27F695EA00F80421 /* NFLGuesserApp.swift */,
+				AEB6779D27FFBC3100B99609 /* ScreenAdapter.swift */,
 				AEA8959A27F69F660054FC0B /* Models */,
 				AE5DE7C127FA3EA60052396E /* DAOs */,
 				AEA8959727F69ED20054FC0B /* Views */,
@@ -299,6 +302,7 @@
 				AEA895A627F6A1870054FC0B /* PlayerView.swift in Sources */,
 				AE5DE7C327FA3EC90052396E /* LineupDAO.swift in Sources */,
 				AED5A6D027F699A100F80421 /* HomeView.swift in Sources */,
+				AEB6779E27FFBC3100B99609 /* ScreenAdapter.swift in Sources */,
 				AEA8959E27F69FA40054FC0B /* NFL.swift in Sources */,
 				AEA895A427F6A1730054FC0B /* LineupView.swift in Sources */,
 				AEA895A827F6A1BC0054FC0B /* ResponseView.swift in Sources */,

@@ -19,10 +19,11 @@ struct ResponseView: View {
                 .font(.largeTitle)
                 .fontWeight(.heavy)
                 .foregroundColor(.primary)
-                .padding(.bottom, -16)
+                .padding(.bottom, ScreenAdapter.main.size(-16, .height))
             LottieView(filename: "\(response)", animationMode: .once)
-                .frame(maxWidth: 300, maxHeight: 300)
-                .padding(.bottom, 150)
+                .frame(maxWidth: ScreenAdapter.main.size(300, .width),
+                       maxHeight: ScreenAdapter.main.size(300, .width))
+                .padding(.bottom, ScreenAdapter.main.size(150, .height))
             Button {
                 dismiss()
             } label: {

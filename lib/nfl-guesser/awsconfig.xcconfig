@@ -1,0 +1,12 @@
+//
+//  awsconfig.xcconfig
+//  NFL Guesser
+//
+//  Created by Ryan Prince on 4/7/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ACCESS_KEY = AKIA37ADEWZ7LIEVTZ66
+SECRET_KEY = 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

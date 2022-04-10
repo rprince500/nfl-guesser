@@ -11,5 +11,19 @@
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 	</dict>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>background-dark</string>
+		<key>UIImageName</key>
+		<string>launch-screen</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<true/>
+		<key>UINavigationBar</key>
+		<dict>
+			<key>UIImageName</key>
+			<string></string>
+		</dict>
+	</dict>
 </dict>
 </plist>

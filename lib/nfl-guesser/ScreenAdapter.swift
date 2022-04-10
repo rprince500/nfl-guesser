@@ -4,8 +4,12 @@
 //
 //  Created by Ryan Prince on 4/7/22.
 //
+//  The UI was designed for and tested on an iPhone 13 Pro.
+//  This singleton provides a function for converting the layout constants proportionally to other screen sizes.
+//  This keeps the UI looking consistent across devices.
+//
 
-import UIKit
+import SwiftUI
 
 class ScreenAdapter {
     

@@ -10,6 +10,7 @@
 		64ED8744F3B027B91B7C6AF5 /* Pods_NFL_Guesser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0ED256D73E6353D8137C9F6 /* Pods_NFL_Guesser.framework */; };
 		AE5DE7C327FA3EC90052396E /* LineupDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5DE7C227FA3EC90052396E /* LineupDAO.swift */; };
 		AE5DE7C527FA40B00052396E /* LogoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5DE7C427FA40B00052396E /* LogoDAO.swift */; };
+		AE866385280299470073F603 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AE866384280299470073F603 /* Lottie */; };
 		AEA8959227F69C310054FC0B /* incorrect.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA8959127F69C310054FC0B /* incorrect.json */; };
 		AEA8959327F69C3A0054FC0B /* correct.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA8959027F69C220054FC0B /* correct.json */; };
 		AEA8959527F69C770054FC0B /* nfl.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA8959427F69C6D0054FC0B /* nfl.json */; };
@@ -23,7 +24,6 @@
 		AED5A6BD27F695EA00F80421 /* NFLGuesserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A6BC27F695EA00F80421 /* NFLGuesserApp.swift */; };
 		AED5A6C127F695EC00F80421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED5A6C027F695EC00F80421 /* Assets.xcassets */; };
 		AED5A6C427F695EC00F80421 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED5A6C327F695EC00F80421 /* Preview Assets.xcassets */; };
-		AED5A6CC27F696A100F80421 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AED5A6CB27F696A100F80421 /* Lottie */; };
 		AED5A6D027F699A100F80421 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A6CF27F699A100F80421 /* HomeView.swift */; };
 		AED5A6D227F69A8D00F80421 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED5A6D127F69A8D00F80421 /* LottieView.swift */; };
 /* End PBXBuildFile section */
@@ -59,8 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED5A6CC27F696A100F80421 /* Lottie in Frameworks */,
 				64ED8744F3B027B91B7C6AF5 /* Pods_NFL_Guesser.framework in Frameworks */,
+				AE866385280299470073F603 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +195,7 @@
 			);
 			name = "NFL Guesser";
 			packageProductDependencies = (
-				AED5A6CB27F696A100F80421 /* Lottie */,
+				AE866384280299470073F603 /* Lottie */,
 			);
 			productName = "NFL Guesser";
 			productReference = AED5A6B927F695EA00F80421 /* NFL Guesser.app */;
@@ -530,7 +530,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AED5A6CB27F696A100F80421 /* Lottie */ = {
+		AE866384280299470073F603 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AED5A6CA27F696A100F80421 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
